@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #f0f2f5;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 254, 254);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+.logo{
+    padding-left: 5px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.search-box{
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    padding-right: 50px;
+    background-color: #efefef;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.btnSearch{
+    border: none;
+    font-size: 15px;
+    width: 15px;
+    color:rgb(184, 182, 182);
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-mid-icons{
+    
+    font-size: 28px;
+    border-radius: 20px;
+    display: inline-flex;
+    padding-left: 100px; 
+}
+.nav-mid-icons a:hover
+{
+    color: #029ee1;
+    background: rgb(234, 232, 232);
+
+}
+.house{
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-bottom: 3px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border-color: white;
+    color: rgb(128, 134, 134);
+}
+.flag{
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    border-color: white;
+    color: rgb(128, 134, 134);
+}
+.play{
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    border-color: white;
+    color: rgb(128, 134, 134);
+}
+.group{
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    border-color: white;
+    color: rgb(128, 134, 134);
+}
+.game{
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    border-color: white;
+    color: rgb(128, 134, 134);
+    
+}
+.nav-right-icons{
+    align-items: center; 
+    display: flex;
+    padding-right: 5px;
+    width: 300px;
+    justify-content: space-evenly;
+    
+
+}
+.profile-link{
+    text-decoration: none; 
+    
+}
+.philip-profile{
+    padding-top: 2px;
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+}
+.profile-name{
+    font-size: 18px;
+    color: rgb(11, 11, 11);
+    line-height: 50px;
+    padding-left: 5px;    
+}
+.messenger{
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background: rgb(234, 232, 232);
+    color: rgb(128, 134, 134);
+
+}
+.bell{
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background: rgb(234, 232, 232);
+    color: rgb(128, 134, 134);
+    
+}
+.dropDown{
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background: rgb(234, 232, 232);
+    color: rgb(128, 134, 134);
+
+}
+.nav-right-icons a:hover{
+    color: #029ee1;
+}
+.container{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+}
+.left-sidebar{
+    
+    flex-basis: 20%;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+    padding-top: 20px;
+    
+    
+}
+.right-sidebar{
+    
+    flex-basis: 24%;
+    position: sticky;
+    top: 60px;
+    align-self: flex-start;
+   padding: 0 0 0 15px;
+    border-radius: 4px;
+    
+    
+
+   
+    
+}
+.main-content{
+    flex-basis: 48%;
+    align-items: center;
+    
+}
+
+.left-icons-links a, .shortcuts a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #626262;
+    width: fit-content;
+    
+}
+.left-icons-links a img{
+    width: 25px;
+    margin-right: 15px;
+    
+}
+.left-icons-links{
+    border-bottom: 1px solid #ccc;
+}
+.shortcuts a img{
+    width: 60px;
+    height: 7vh;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcuts p{
+    margin: 15px 0;
+    color: #626262;
+    font-weight: 500;
+}
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 15px;
+    
+}
+.sidebar-title h4{
+    color: #626262;
+    font-weight: 500;
+    font-size: 16px;
+}
+.foodpanda img{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sponsored{
+    
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.foodpanda, .grammarly{
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    
+}
+.foodpanda-text{
+    padding-top: 18px;
+    line-height: 18px;
+}
+.foodpanda-text a, .grammarly-text a{
+    text-decoration: none;
+    color: #626262;
+}
+.grammarly img{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+    
+    
+}
+.grammarly-text{
+    padding-top: 25px;
+    line-height: 18px;
+}
+.sponsored{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.pages img{
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+.pages p{
+    color: #626262;
+    padding-bottom: 10px;
+}
+.pages a{
+    
+    text-decoration: none;
+    color: rgb(35, 32, 32);
+}
+.pages span{
+    line-height: 40px;
+    padding-left: 10px;
+}
+.page-functions{
+    padding: 10px 0 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+.page-functions a{
+    text-decoration: none;
+}
+.page-functions span, .page-functions i{
+    padding-left: 5px;
+    color: #626262;
+}
+.friendR p{
+    color: #626262;
+    padding: 15px 0 10px 0;
+}
+.friendR{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.friendR img{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    float: left;
+}
+.friendR span{
+    line-height: 40px;
+    padding-left: 10px;
+}
+.friendR a{
+    text-decoration: none;
+    color: rgb(35, 32, 32);
+    
+}
+.btnConfirm{
+    border-radius: 7px;
+    padding: 8px 25px 8px 25px;
+    background-color: #00B2FF;
+    border-style: none;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btnDelete{
+    border-radius: 7px;
+    padding: 8px 30px 8px 30px;
+    border-style: none;
+    cursor: pointer;
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+
+}
+.online{
+    position: relative;
+}
+.online-list .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    right: 0;
+}
+.online-list .online::after{
+    top: unset;
+    bottom: 5px;
+}
+
+
+.story-gallery{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+.story{
+    flex-basis: 18%;
+    padding-top: 28%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.story img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px solid #626262;
+    border-style: solid;
+    border-color: #2196f3;
+}
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.story1{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(photos/philip.jpg);
+}
+.story1 img{
+    top: 130px;
+    left: 45px;
+}
+.story2{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(photos/kiss.jpeg);
+}
+.story3{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(photos/story3.png);
+}
+.story4{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(photos/story4.jpg);
+}
+.story5{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(photos/story5.jpg);
+}
+.write-post-container{
+   
+    width:100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    columns: #626262;
+    height: 140px;
+    text-align: center;
+    align-items: center;
+}
+.post-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+.post-profile textarea{
+    line-height: 36px;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding-right: 50%;
+    padding-left: 30px;
+    width: 90%;
+    resize: none;
+    border: none;
+    background: rgb(242, 241, 241); 
+
+}
+.post-profile{
+    padding-bottom: 12px;
+
+}
+.post-options img{
+    width: 35px;
+    margin-top: 2px;
+}
+
+.post-options{
+    
+    display: flex;
+    border-top: 1px solid rgb(220, 219, 219);
+    justify-content: space-evenly;
+}
+.post-options a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+   padding: 8px 50px 8px 50px;
+    border-radius: 25px;
+    width: 220px;
+}
+.post-options a img{
+    width: 35px;
+    margin-right: 10px;
+}
+.post-options a:hover{
+    background: rgb(234, 232, 232);
+}
+.room-icon img{
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 5px;
+    
+}
+
+.room-icon a{
+    display: flex;
+    border: 2px solid;
+    border-radius: 40px;
+    width: 145px;
+    margin-top: 6.5px;
+    margin-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2196f3;
+    border-color: rgb(219, 219, 244);
+    
+    
+}
+
+.room{
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 20px;
+    columns: #626262;
+    height: 60px;
+    display: inline-flex;
+    width:100%;
+    height: 60px;
+}
+.profiles{
+    flex-direction: row;
+    
+}
+.sidebar-title a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #2196f3;
+}
+.profiles img{
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 10px;
+    border: 0.5px solid #ccc;
+    
+}
+.post-container1{
+    padding: 20px;
+    margin: 20px 0;
+}
+.post-container{
+    
+    width: 100%;
+   
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+    
+    
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 10px;
+    float: left;
+}
+.post-container p{
+    padding-top: 5px;
+}
+.post-text{
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 20px;
+    color: rgb(55, 54, 54);
+}
+.post-img{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    border: 0.5px solid;
+    margin-bottom: 5px;
+}
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-bottom: 1px solid #ccc;
+}
+.activity-icons img{
+    width: 25px;
+    margin-right: 3px;
+}
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+}
+.activity-icons{
+    margin-bottom: 5px;
+}
+.cmt{
+    margin-left: 340px;
+    margin-right: 10px;
+}
+.function-row{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-evenly;
+}
+.post-functions{
+    margin-top: 4px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.post-functions img{
+    width: 38px;
+    margin-right: 3px;
+   margin-left: 20px;
+}
+.post-functions div{
+    display: inline-flex;
+    line-height: 30px;
+}
+.love, .comment{
+    margin-right: 160px;
+    
+}
+.love, .comment, .share{
+    cursor: pointer;
+}
+.comment img, .share img{
+    width: 33px;
+}
+.post-comment img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+.post-comment textarea{
+    line-height: 36px;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding-right: 50%;
+    padding-left: 10px;
+    width: 90%;
+    resize: none;
+    border: none;
+    background: rgb(242, 241, 241); 
+
+}
+.post-comment{
+    padding-top: 12px;
+
+}
+.post-img2{
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    border: 0.5px solid;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: #2196f3;
+    position: sticky;
+    z-index: 100;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
